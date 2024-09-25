@@ -1,7 +1,0 @@
-services:
-  openweathermap-ui:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: openweathermap-ui
-    restart: always
