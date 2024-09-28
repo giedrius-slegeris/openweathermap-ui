@@ -57,7 +57,7 @@ services:
     tty: true
     restart: unless-stopped
     env_file:
-      - ./.store.env
+      - ./.env.store
     networks:
       - web_app
 
