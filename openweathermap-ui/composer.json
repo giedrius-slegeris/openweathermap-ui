@@ -4,10 +4,17 @@
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/giedrius-slegeris/proto-definitions-php"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "giedrius-slegeris/proto-definitions-php": "^1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -60,6 +67,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
