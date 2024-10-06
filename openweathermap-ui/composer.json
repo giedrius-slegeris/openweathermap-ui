@@ -14,7 +14,11 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "giedrius-slegeris/proto-definitions-php": "^1"
+        "giedrius-slegeris/proto-definitions-php": "^1",
+        "google/protobuf": "^3.20",
+        "grpc/grpc": "^1.50",
+        "ext-grpc": "*",
+        "ext-protobuf": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d07688ae6e51b0ea165cad8a0914d77f",
+    "content-hash": "b4bb36fd46d41ee110672d5794cf5310",
     "packages": [
         {
             "name": "brick/math",
@@ -579,34 +579,37 @@
         },
         {
             "name": "giedrius-slegeris/proto-definitions-php",
-            "version": "1.2",
+            "version": "1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giedrius-slegeris/proto-definitions-php.git",
-                "reference": "1991c71482c4f131eb4206dad091f99e154d2fee"
+                "reference": "0764ce32b42f0cbc92bbf2502e903aebe89c7a8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giedrius-slegeris/proto-definitions-php/zipball/1991c71482c4f131eb4206dad091f99e154d2fee",
-                "reference": "1991c71482c4f131eb4206dad091f99e154d2fee",
+                "url": "https://api.github.com/repos/giedrius-slegeris/proto-definitions-php/zipball/0764ce32b42f0cbc92bbf2502e903aebe89c7a8e",
+                "reference": "0764ce32b42f0cbc92bbf2502e903aebe89c7a8e",
                 "shasum": ""
             },
             "require": {
+                "ext-grpc": "*",
+                "ext-protobuf": "*",
                 "google/protobuf": "^3.20",
                 "grpc/grpc": "^1.50"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "OpenWeatherMapStore\\": "OpenWeatherMapStore/"
+                    "OpenWeatherMapStore\\": "OpenWeatherMapStore/",
+                    "GPBMetadata\\": "OpenWeatherMapStore/GPBMetadata/"
                 }
             },
             "description": "A client and stub files for the OpenWeatherMap API",
             "support": {
-                "source": "https://github.com/giedrius-slegeris/proto-definitions-php/tree/1.2",
+                "source": "https://github.com/giedrius-slegeris/proto-definitions-php/tree/1.5",
                 "issues": "https://github.com/giedrius-slegeris/proto-definitions-php/issues"
             },
-            "time": "2024-09-29T09:37:13+00:00"
+            "time": "2024-09-29T10:51:43+00:00"
         },
         {
             "name": "google/protobuf",
@@ -7874,7 +7877,9 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "ext-grpc": "*",
+        "ext-protobuf": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
