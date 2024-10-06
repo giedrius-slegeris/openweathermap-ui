@@ -3,15 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Services\WeatherStoreMapService;
-use Illuminate\Http\Response;
+use Exception;
+use Illuminate\Contracts\View\View;
 
 class WeatherStoreMapController {
 
+    /**
+     * @param WeatherStoreMapService $s
+     * @return View
+     * @throws Exception
+     */
     public function getWeather(
         WeatherStoreMapService $s
-    ): Response
+    ): View
     {
-        return new Response($s->test());
+        return view('weather.index', $s->getWeatherData());
     }
-
 }
